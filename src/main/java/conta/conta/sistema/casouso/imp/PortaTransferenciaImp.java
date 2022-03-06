@@ -51,6 +51,7 @@ public class PortaTransferenciaImp implements PortaTransferencia {
         }
 
         //2. validação de contas
+        // edison.martins - Essas validações poderiam estar dentro DomainService.
         var debito = repositorio.get(contaDebito);
         if (isNull(debito)) {
             inexistente("Conta débito");
@@ -61,6 +62,7 @@ public class PortaTransferenciaImp implements PortaTransferencia {
         }
 
         //3.validacao mesma conta
+        // edison.martins - Esta validação poderia estar dentro DomainService.
         if (debito.getNumero().equals(credito.getNumero())) {
             mesmaConta();
         }
