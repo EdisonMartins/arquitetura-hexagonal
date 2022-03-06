@@ -9,7 +9,7 @@ import static conta.sistema.dominio.modelo.Erro.obrigatorio;
 import static java.util.Objects.isNull;
 
 @Named
-public class Trasnferencia {
+public class Transferencia {
     public void processar(BigDecimal valor, Conta debito, Conta credito) {
         if (isNull(valor)) {
             obrigatorio("Valor da transferência");
