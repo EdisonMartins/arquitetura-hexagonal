@@ -1,4 +1,4 @@
-package conta.conta.sistema.casouso.porta;
+package conta.sistema.casouso.porta;
 
 import conta.sistema.dominio.modelo.Conta;
 

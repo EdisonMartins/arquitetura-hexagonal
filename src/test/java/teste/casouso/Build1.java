@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 /**
  * Configuration: Responsavel por configurar os serviços do spring
- * ComponentScan: Configura as diretivas de varredura.
+ * @ComponentScan: Configura as diretivas de varredura.
  *
  * conta.sistema: Pacote do Hexágono
  * conta.adaptador: Pacote dos Adaptadores Mock

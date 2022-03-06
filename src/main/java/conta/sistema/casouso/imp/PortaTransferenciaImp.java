@@ -1,6 +1,6 @@
-package conta.conta.sistema.casouso.imp;
+package conta.sistema.casouso.imp;
 
-import conta.conta.sistema.casouso.porta.PortaTransferencia;
+import conta.sistema.casouso.porta.PortaTransferencia;
 import conta.sistema.dominio.modelo.Conta;
 import conta.sistema.dominio.servico.Transferencia;
 import conta.sistema.porta.ContaRepositorio;
