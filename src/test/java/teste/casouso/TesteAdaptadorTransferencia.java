@@ -160,6 +160,7 @@ public class TesteAdaptadorTransferencia {
             assertEquals(credito.getSaldo(), cem.add(cinquenta), "Saldo crédito deve bater");
             assertEquals(debito.getSaldo(), cem.subtract(cinquenta), "Saldo débito deve bater");
         } catch (NegocioException e) {
+            fail("Não deve gerar erro de validação de saldo - " + e.getMessage());
         }
     }
 
