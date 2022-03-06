@@ -46,8 +46,16 @@ public class Conta {
         saldo = saldo.subtract(debito);
     }
 
-    // Getters and Setters
+    @Override
+    public String toString() {
+        return "Conta{" +
+                "numero=" + numero +
+                ", saldo=" + saldo +
+                ", correntista='" + correntista + '\'' +
+                '}';
+    }
 
+    // Getters and Setters
     public Integer getNumero() {
         return numero;
     }
@@ -55,4 +63,30 @@ public class Conta {
     public void setNumero(Integer numero) {
         this.numero = numero;
     }
+
+    public BigDecimal getSaldo() {
+        return saldo;
+    }
+
+    public String getCorrentista() {
+        return correntista;
+    }
+
+    // Equals and HashCode
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Conta conta = (Conta) o;
+
+        return numero.equals(conta.numero);
+    }
+
+    @Override
+    public int hashCode() {
+        return numero.hashCode();
+    }
+
+
 }
