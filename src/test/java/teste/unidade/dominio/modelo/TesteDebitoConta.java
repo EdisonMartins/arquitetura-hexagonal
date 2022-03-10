@@ -2,6 +2,7 @@ package teste.unidade.dominio.modelo;
 
 import conta.sistema.dominio.modelo.Conta;
 import conta.sistema.dominio.modelo.NegocioException;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +17,11 @@ public class TesteDebitoConta {
     // armazena o saldo para teste ficar dinamico
     BigDecimal cem = new BigDecimal(1000);
     Conta contaValida;
+
+    @BeforeEach
+    void prepara() {
+        contaValida = new Conta(1, cem, "Fernando");
+    }
 
     @Test
     @DisplayName("valor débito nulo como obrigatório")

@@ -10,4 +10,16 @@ module conta.sistema {
 
     // expondo adaptadores de saídas (driven)
     exports conta.adaptador;
+
+    // expondo testes de unidade
+    exports teste.unidade.dominio.modelo;
+
+    // abre reflexão spring
+    opens conta.sistema.casouso.porta;
+    opens conta.sistema.casouso.imp;
+    opens conta.sistema.dominio.servico;
+    opens conta.adaptador;
+
+
+
 }
