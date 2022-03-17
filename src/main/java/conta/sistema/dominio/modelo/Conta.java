@@ -72,6 +72,14 @@ public class Conta {
         return correntista;
     }
 
+    public void setSaldo(BigDecimal saldo) {
+        this.saldo = saldo;
+    }
+
+    public void setCorrentista(String correntista) {
+        this.correntista = correntista;
+    }
+
     // Equals and HashCode
     @Override
     public boolean equals(Object o) {
